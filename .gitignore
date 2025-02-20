@@ -15,8 +15,8 @@ public class Conversion {
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("This program converts Japanese Yen to US Dollars.");
         System.out.println("To use it, enter a value in Yen when prompted.");
-        System.out.println("I hope you enjoy using my program and find it useful.");
-        System.out.println("Now let's begin!");
+        System.out.println("I hope you you find this program to be useful if you need to convert currencies.");
+        System.out.println("i Hope you have fun with our porgram!");
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
     }
 
