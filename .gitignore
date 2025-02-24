@@ -7,10 +7,9 @@
  */
 
 import java.util.Scanner;
-
+    // Welcome menu
 public class Conversion {
 
-    // Welcome menu
     public static void welcome() {
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("This program converts Japanese Yen to US Dollars and US Dollars to Yen.");
@@ -58,11 +57,7 @@ public class Conversion {
         welcome();
         option = menu(in);
 
-        /**
-            * case 1 = Yen to US Dollar
-            * case 2 = US Dollar to Yen
-            * case 3 = Goodbye section
-            * default = Invaild Option 
+        // physical conversion options
         switch (option) {
             case 1:
                 System.out.print("Enter the amount in Japanese Yen: ");
