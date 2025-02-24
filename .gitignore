@@ -10,9 +10,7 @@ import java.util.Scanner;
 
 public class Conversion {
 
-    /**
-        * Welcome menu
-    */
+    // Welcome menu
     public static void welcome() {
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("This program converts Japanese Yen to US Dollars and US Dollars to Yen.");
@@ -40,9 +38,8 @@ public class Conversion {
         return amountInUsd / 0.0066;
     }
 
-    /** 
-        * Menu of options
-    */
+    // Menu of options
+   
 
     public static int menu(Scanner in) {
         System.out.println("1. Yen to US Dollars");
