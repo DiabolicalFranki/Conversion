@@ -20,16 +20,22 @@ public class Conversion {
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
     }
 
+    /**
+     * Converts an amount from Japanese Yen to US Dollars.
+     *
+     * @param amountInYen the amount in Japanese Yen
+     * @return the equivalent amount in US Dollars
+     */
     public static double Yen2Dollar(double amountInYen) {
-        return amountInYen * YEN_TO_USD_RATE;
+        return amountInYen * 0.0066;
     }
 
     public static int menu(Scanner in) {
         System.out.println("1. Yen to US Dollars");
-        System.out.println("2. End the program");
+        System.out.println("2. US Dollars to Yen");
+        System.out.println("3. End the program");
         System.out.print("Enter your option: ");
-        int option = in.nextInt();
-        return option;
+        return in.nextInt();
     }
 
     public static void main(String[] args) {
