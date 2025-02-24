@@ -26,7 +26,16 @@ public class Conversion {
      */
     public static double Yen2Dollar(double amountInYen) {
         return amountInYen * 0.0066;
-        return amountInYen / 0.0066;
+    }
+
+    /**
+     * Converts an amount from US Dollars to Japanese Yen.
+     *
+     * @param amountInUsd the amount in US Dollars
+     * @return the equivalent amount in Japanese Yen
+     */
+    public static double Dollar2Yen(double amountInUsd) {
+        return amountInUsd / 0.0066;
     }
 
     public static int menu(Scanner in) {
@@ -42,8 +51,6 @@ public class Conversion {
         int option;
         double amount;
         double convertedAmount;
-        double dollar2yen;
-        double amountinUSD;
 
         welcome();
         option = menu(in);
