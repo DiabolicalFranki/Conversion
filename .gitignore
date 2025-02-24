@@ -1,3 +1,4 @@
+
 /**
  *Description:Lab 1 Group project
  * This project is designed to convert Yen to USD & USD to Yen.
@@ -60,27 +61,26 @@ public class Conversion {
                 System.out.print("Enter the amount in Japanese Yen: ");
                 amount = in.nextDouble();
                 convertedAmount = Yen2Dollar(amount);
-                System.out.println(amount + " yen is equal to " + convertedAmount + " US Dollars.");
+                System.out.printf("%.2f yen is equal to %.2f US Dollars.%n", amount, convertedAmount);
                 break;
 
             case 2:
                 System.out.println("Enter US dollar to convert");
                 amount = in.nextDouble();
                 convertedAmount= Dollar2Yen(amount);
-                System.out.println(amount + " United States Dollars is equal to  " + convertedAmount + " Yen.");
+                System.out.printf("%.2f US Dollars is equal to %.2f yen.%n", amount, convertedAmount);
                 break;
 
             case 3:
                 System.out.println("Goodbye & have a nice day.");
                 break;
 
-            case 4:
+            default:
                 System.out.println("Invalid option, please try again.");
                 break;
         }
 
-            in.close();
-        }
+        in.close();
     }
-*
+}
 
