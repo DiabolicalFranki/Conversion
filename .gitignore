@@ -1,4 +1,3 @@
-
 /**
  *Description: Lab 1 Group project
  * This project is designed to convert Yen to USD & USD to Yen.
@@ -7,7 +6,8 @@
  */
 
 import java.util.Scanner;
-    // Welcome menu
+
+// Welcome menu
 public class Conversion {
 
     public static void welcome() {
@@ -24,11 +24,14 @@ public class Conversion {
      * @param amountInYen the amount in Japanese Yen
      * @return the equivalent amount in US Dollars
      */
+
     public static double Yen2Dollar(double amountInYen) {
         return amountInYen * 0.0066;
     }
 
-    /**
+   /**
+     * Converts an amount from US Dollars to Japanese Yen.
+     *
      * @param amountInUsd the amount in US Dollars
      * @return the equivalent amount in Japanese Yen
      */
@@ -38,8 +41,6 @@ public class Conversion {
     }
 
     // Menu of options
-   
-
     public static int menu(Scanner in) {
         System.out.println("1. Yen to US Dollars");
         System.out.println("2. US Dollars to Yen");
