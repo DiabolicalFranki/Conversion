@@ -1,6 +1,6 @@
 /**
- *Description:Group project
- * Designed print the first letter of the users name.
+ *Description:Lab 1 Group project
+ * This project is designed to convert Yen to USD & USD to Yen.
  *@author Michael Polk and Jaya Menon
  *@since Feb 17 2025
  */
@@ -69,6 +69,7 @@ public class Conversion {
                 amountinUSD = convertUnitedToYen(dollar);
                 System.out.println(dollar2yen + " United States Dollar is equal to  " + amountinUSD + " Yen.");
                 break;
+
             case 3:
                 System.out.println("Goodbye & have a nice day.");
                 break;
