@@ -9,8 +9,6 @@ import java.util.Scanner;
 
 public class Conversion {
 
-    private static final double YEN_TO_USD_RATE = 0.0066;
-
     public static void welcome() {
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
         System.out.println("This program converts Japanese Yen to US Dollars.");
@@ -56,11 +54,11 @@ public class Conversion {
                 break;
 
             case 2:
-                System.out.println("Goodbye.");
+                System.out.println("Goodbye & have a nice day.");
                 break;
 
             case 3:
-                System.out.println("Invalid option.");
+                System.out.println("Invalid option, please try again.");
                 break;
         }
 
