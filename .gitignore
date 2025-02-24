@@ -65,8 +65,8 @@ public class Conversion {
 
             case 2:
                 System.out.println("Enter US dollar to convert");
-                dollar2yen = in.nextDouble();
-                amountinUSD = convertUnitedToYen(dollar);
+                amount = in.nextDouble();
+                convertedAmount= Dollar2Yen(amount);
                 System.out.println(dollar2yen + " United States Dollar is equal to  " + amountinUSD + " Yen.");
                 break;
 
