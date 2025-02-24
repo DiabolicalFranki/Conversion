@@ -1,7 +1,7 @@
 /**
  *Description:Group project
  * Designed print the first letter of the users name.
- *@author Michael Polk
+ *@author Michael Polk and Jaya Menon
  *@since Feb 17 2025
  */
 
@@ -11,10 +11,10 @@ public class Conversion {
 
     public static void welcome() {
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-        System.out.println("This program converts Japanese Yen to US Dollars.");
+        System.out.println("This program converts Japanese Yen to US Dollars and US Dollars to Yen.");
         System.out.println("To use it, enter a value in Yen when prompted.");
         System.out.println("I hope you you find this program to be useful if you need to convert currencies.");
-        System.out.println("i Hope you have fun with our porgram!");
+        System.out.println("I Hope you have fun with our porgram!");
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
     }
 
@@ -26,6 +26,7 @@ public class Conversion {
      */
     public static double Yen2Dollar(double amountInYen) {
         return amountInYen * 0.0066;
+        return amountInYen / 0.0066;
     }
 
     public static int menu(Scanner in) {
@@ -41,6 +42,8 @@ public class Conversion {
         int option;
         double amount;
         double convertedAmount;
+        double dollar2yen;
+        double amountinUSD;
 
         welcome();
         option = menu(in);
@@ -54,10 +57,16 @@ public class Conversion {
                 break;
 
             case 2:
+                System.out.println("Enter US dollar to convert");
+                Scanner in = new Scanner(System.in);
+                double dollar2yen = in.nextDouble();
+                double amountinUSD = convertUnitedToYen(dollar);
+                System.out.println("United States Dollar to Yen is " + yen);
+            case 3:
                 System.out.println("Goodbye & have a nice day.");
                 break;
 
-            case 3:
+            case 4:
                 System.out.println("Invalid option, please try again.");
                 break;
         }
@@ -66,3 +75,4 @@ public class Conversion {
         }
     }
 *
+
